@@ -1,0 +1,11 @@
+a {
+    color: orangered;
+    text-decoration: none;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    filter: brightness(150%);
+    text-decoration: underline;
+}
