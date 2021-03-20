@@ -3,7 +3,7 @@ a {
     text-decoration: none;
 }
 a:visited {
-    color: green;
+    color: green; 
 }
 a:hover {
     filter: brightness(150%);
