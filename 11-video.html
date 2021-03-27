@@ -8,6 +8,25 @@
 <body>
     <h1>Vídeo em HTML</h1>
     
+    <h2>Formatos de video</h2>
+    
+    <p>Para entender os formatos de video, é preciso entender primeiro o que são os <em>codecs</em> (codificadores/decodificadores). Trata-se de algoritimos que codificam e depois decodificam varias imagens em sequencia para criar a ilusão do movimento. Alguns <em>codecs</em> de video não lidam com a parte de som. Com isso, torna-se necessário acrescentar o audio em uma parte separada, usando um dos formatos de audio ja estudados.</p>
+
+    <p>Para juntar as partes de vídeo, áudio e outras informações(como, por exemplo, as legendas) em um único arquivo, existem os formatos <em>container</em>. Esses formatos podem parecer multimidia produzidas com <em>codecs</em> diferentes. Por isso, o equipamento que ira reproduzi-las precisa, além de reconhecer o formato do arquivo <em>container</em>, ter tambem instalados os <em>codecs</em> para decodificar áudio e vídeo. Os navegadores trazem instalados os <em>codecs</em> mais comuns.</p>
+    <ul>
+        <li><strong>MP4</strong>: Formato introduzido em 2001 pela ISO (<em>International Standards Organization</em>, Organização internacional de Padrões), e que se tornou 0 padrão de mercado. É um formato <em>container</em> que suporta varios <em>codecs</em> tanto de audio como de video, que usualmente estão sob compressão.</li>
+        <li><strong>M4V</strong>: Formato introduzido pela Apple, tecnicamente semelhante ao MP4. No entanto, esse formato suporta DRM (<em>Digital Rights Management</em>, Gerenciamento de Direitos Autorais), permitindo que conteudos protegidos por direitos autorais só possam ser reproduzidos por quem tiver adquirido licença para tal</li>
+        <li><strong>WEBM</strong>: Projeto irmão do WEBP, iniciado pela Fundação Xiph.org em 2010 e depois assumido pelo google. É tambem um formato <em>container</em>, que promete melhor qualidade de compressão em um menor tamanho de arquivo quando comparado ao MP4</li>
+        <li><strong>OGV</strong>: Formato <em>container</em> da familia OGG Vorbis, introduzido pela Fundação Xiph.org em 2004, de livre utilização</li>
+        <li><strong>AVI</strong>: Sigla para <em>Audio Video Interleaved</em>(Audio e Video Entrelaçados),introduzido pela microsoft em 1992. É um formato sem compressão, tendendo a gerar arquivos muito grandes</li>
+    </ul>
+
+    <h2>Problemas com hospedagem de vídeos</h2>
+
+    <p>Hospedar vídeos em seu próprio <em>website</em> pode sair caro, pois varias hospedagens atualmente cobram por tráfego. Um tipico video de 500mb de tamanho, por exemplo,  ao ser reproduzido 20 vezes, terá consumido 10GB de tráfego (ou de banda, como se ouve com mais frequência.</p>
+
+    <p>Portanto na maioria das vezes, o melhor a fazer é hospedar seu video em serviços como o Youtube ou o Vimeo e apenas incorporar ("linkar") o video em seu <em>site</em>. Enquanto vídeos hospedados no Youtube geralmente estarão disponiveis para um publico amplo, enquanto o Vimeo, mediante pagamento, permite restringir o acesso aos videos. </p>
+    
     <h2>Exemplo de vídeo com múltiplas fontes</h2>
 
     <video controls width="400px" poster="video/reduzir-pdf-thumb.png">
@@ -16,6 +35,7 @@
         <source src="video/reduzir-pdf.webm" type="video/webm">
         <p>Não foi possivel baixar o vídeo. Faça o <a href="video/reduzir-pdf.mp4" download="reduzir-pdf.mp4" type="video/mp4">download</a> do arquivo</p>
     </video>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jgQjeqGRdgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 </body>
 </html>
