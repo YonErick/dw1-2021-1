@@ -1,0 +1,21 @@
+div.container{
+    background-color: darkgrey;
+    font-family: "IBM Plex Sans", Calibri, Arial,sans;
+    padding: 20px
+}
+div.container div{
+    border: 1px solid red;
+    padding: 12px;
+    margin-bottom: 16px
+}
+#box1{
+    background-color: goldenrod;
+}
+#box2{
+    background-color: indigo;
+    padding: 30px 8px 25px 40;
+}
+#box3{
+    background-color: lightskyblue;
+    margin-bottom: 0;
+}
