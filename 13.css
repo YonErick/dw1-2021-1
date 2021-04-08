@@ -1,0 +1,49 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html {
+    font-size: 20px;
+}
+div {
+    padding: 20px;
+    border: 2px;
+    margin: 10px;
+    text-align: center;
+}
+#container {
+    background-color: goldenrod;
+    font-size: 16pt;
+}
+#box1 {
+    background-color: cadetblue;
+    font-size: 30pt;
+    height: 20%;
+}
+#box2 {
+    background-color: hotpink;
+    font-size: 1.5em;
+    width: 50%;
+    height: 12vh;
+    /* Fonte do pai 16pt, 1.5em = 1.5 * 16pt = 24pt*/
+}
+#box3 {
+    background-color: mediumpurple;
+    font-size: 150%;
+}
+#box3-1 {
+    font-size: 0.5em;
+}
+#box4 {
+    background-color: aquamarine;
+    font-size: 3rem;
+    width: 40vw;
+}
+/* 
+px - PIXEL - corresponde a um ponto de iluminação na tela ou quando isso não puder ser determinado, equivale a 1/96 de uma polegada, portanto depende da resolução da tela.
+pt -POINT - medida usada para o tamanho de fontes, equivale a 1/72 de uma polegada.
+cm - CENTÍMETRO - para impressão
+mm - MILÍMETRO - para impressão
+in - INCHES - polegadas, para impressão 
+vw - ViewPort - 1% da area branca
+vh - ViewPort2 - 1% da altura do viewport
+*/
