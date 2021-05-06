@@ -1,8 +1,11 @@
+/*@import, quando existem, devem ser o 1 arquivo do css*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* CSS Reset */
 *{
     /*Todos os Elementos*/
     padding: 0;
     margin: 0;
+    font-family: Raleway, Calibri, Arial, 'Times New Roman';
 }
 
 header{
@@ -12,4 +15,8 @@ header{
 nav ul li{
     display: inline-block;
     margin: 10px;
+}
+nav{
+    background-color: #ff7f2a;
+    color: white;
 }
