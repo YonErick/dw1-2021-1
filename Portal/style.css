@@ -48,6 +48,29 @@ a:hover {   /* Mouse passando em cima do link */
 header {
     background-color: var(--cor-primaria);
     padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#social{
+    background-color: transparent;
+    display: flex;
+    align-content: baseline;
+}
+#social a span{
+    margin-left: 6px;
+    display: none;
+}
+#social img{
+    width: 32px;
+}
+#social a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center
+}
+#social a:hover span{
+    display: inline;
 }
 
 nav ul li {
@@ -58,6 +81,23 @@ nav ul li {
 nav {
     background-color: var(--cor-secundaria);  /* Cor do fundo */
     color: var(--cor-texto-claro);             /* Cor do texto */
+}
+#menu{
+    padding: 0 20px;
+}
+#menu li{
+    margin: 10px 0;
+}
+#menu a{
+    height: 100%;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    transition: 500ms;
+    background-color: var(--cor-secundaria);
+}
+#menu a:hover{
+    filter: brightness(0.8);
+    text-decoration: none;
 }
 
 #content {
@@ -166,7 +206,7 @@ footer{
     color: var(--cor-texto-claro);    
     display: flex;
     flex-direction: row;
-    align-content: space-between;
+    justify-content: space-around;
 }
 footer a{
     color: var(--cor-texto-claro);
@@ -175,5 +215,12 @@ footer ul li{
     display: inline-block;
     margin: 0 6px;
     padding: 0 12px;
-    border-right: 1px solid white;
+    border-right: 2px solid white;
+}
+footer img {
+    width: 200px;
+    height: 100%;
+}
+footer ul li:last-child{
+    border-right: none;
 }
