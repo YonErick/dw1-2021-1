@@ -27,7 +27,8 @@
 
     /* Família de fontes da web (webfonts) */
     font-family: Raleway, Calibri, Arial, sans;
-    font-size: 16px;
+    font-size: 16px;    
+    box-sizing: border-box;
     
 }
 html {                  /* Tamanho de fonte padrão do documento */
@@ -117,6 +118,7 @@ main, aside {
     /* Sombra (drop-down shadow) */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
     flex-grow: 1;   /* 1 unidade de largura (padrão) */
+    max-width: 100%;
 }
 
 main {
@@ -179,6 +181,7 @@ article > h2 {
     width: 450px;
     margin-right: 24px;
     border-radius: 4px;
+    max-width: 100%;
 }
 
 .foto-texto {
@@ -191,6 +194,8 @@ aside > article > img {
     /* margin auto à esquerda e à direita centraliza o elemento quando este é
        display: block */
     margin: 0 auto; 
+    border-radius: 4px;
+    max-width: 100%;
 }
 
 aside > article > h1 > a {
@@ -223,4 +228,54 @@ footer img {
 }
 footer ul li:last-child{
     border-right: none;
+}
+@media screen and (max-width: 1020px){
+    main{
+        width: 60%;
+    }
+    aside{
+        width: 40%;
+    }
+    .foto-texto {
+        flex-direction: column; /* Os filhos ficarão em linha */
+    }
+    .destaque img{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 800px){
+    #content {
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+        max-width: 100%;
+    }
+    aside{
+        width: 100%;
+        margin-left: 0 
+    }
+    aside > article > h1{
+        text-align: center;
+    }
+    .destaque img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer > *{
+        margin-bottom: 12px;
+    }
+    footer ul li:first-child{
+        padding-left: 0;
+    }
+    footer addrress{
+        text-align: right;
+    }
+}
+@media screen and (max-width:640px){
+    /* colocar logo principal e icones de redes sociais em coluna*/
 }
