@@ -13,22 +13,11 @@
 }
 
 /* CSS reset */
-* { /* Todos os elementos */
+* { 
     padding: 0;
     margin: 0;
-    /* Exemplo de família de fonte SEM serifa
-    font-family: Calibri, Arial, sans; */
-
-    /* Exemplo de família de fonte COM serifa
-    font-family: Georgia, 'Times New Roman', serif; */
-
-    /* Exemplo de família de fonte MONOESPAÇADA 
-    font-family: Consolas, 'Courier New', monospace; */
-
-    /* Família de fontes da web (webfonts) */
     font-family: Raleway, Calibri, Arial, sans;
     font-size: 16px;
-    /* Faz com que bordas e margens sejam considerados no tamanho total do elemento */
     box-sizing: border-box;
     
 }
