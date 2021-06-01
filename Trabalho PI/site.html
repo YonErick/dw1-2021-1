@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corujão Games</title>  <!--COLOCAR FONTE BUNGEE-->
+    <title>Corujão Games</title>
     <link rel="stylesheet" href="coruja.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     
 </head>
 
 <body>
     <header> 
-        <img id="logo" src="img/Corujão.svg" alt="Corujão">
+        <a href="site.html">
+            <img id="logo" src="img/Corujão.svg" alt="Corujão">
+        </a>
             <nav id="Rede-Social">
                 <ul>
                     <li>
                         <a href="#">
                             <img src="img/WhatsApp.png" alt="WhatsApp">
-                            <span>(16)9'4567-8910</span>
+                            <span>(16)94567-8910</span>
                         </a>
                     </li>
                     <li>
@@ -47,7 +49,7 @@
             </nav>
     </header>
     
-    <nav class="menu"> <!-- Menu --> <!--COLOCAR FONTE RAJDHANI--><!--VER ONDE N PRECISA DE '#'-->
+    <nav class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Resenhas</a></li>
@@ -66,22 +68,22 @@
                     </ul>
                 </li>
             </ul>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLCnXbrzZAtpsqDbXr69aL_70R3r0FQXb5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
     </nav>
-    <div id=""> <!--adicionar ID-->
+    <div id="Principal">
         <main> 
 
             <h1>Novidades</h1>
 
-            <article class="GTA">   <!--Adicionar uma class-->
+            <article class="GTA">
 
                 <h2>Atualização</h2><!--USAR FONTE FATFACE, COLOCAR EM BOX E ESPECIFICAR A PLATAFORMA, FAZ EM TODOS PNC -->
 
-                <h1><a href="#">GTA RP</a></h1><!--Titulo da noticia-->
+                <h1><a href="Sites/GTA.html">GTA RP</a></h1>
 
                 <div class=""><!--adiciona class-->
 
-                    <img src="img/GTARP.jpg" alt="GTA RolePlay" title="Grand Theft Auto" ><!--Adiciona foto da noticia,title=fotografo,alt-->
+                    <img src="img/GTARP.jpg" alt="GTA RolePlay" title="Grand Theft Auto" id="foto" ><!--Adiciona foto da noticia,title=fotografo,alt-->
                     <p></p><!--Resenha da noticia-->
                 </div>
             </article>
@@ -90,11 +92,11 @@
 
                 <h2>Resenha</h2><!--CATEGORIA-->
 
-                <h1><a href="RedDead.html">Red Dead Redemption 2</a></h1><!--Titulo da noticia-->
+                <h1><a href="Sites/RedDead.html">Red Dead Redemption 2</a></h1><!--Titulo da noticia-->
 
                 <div class=""><!--adiciona class-->
 
-                    <img src="img/Red Dead Redemption 2.jpg" alt="RDR2" title="Red Dead Redemption 2" ><!--Adiciona foto da noticia,title=fotografo,alt-->
+                    <img src="img/Red Dead Redemption 2.jpg" alt="RDR2" title="Red Dead Redemption 2" id="foto" ><!--Adiciona foto da noticia,title=fotografo,alt-->
                     <p></p><!--Descricao da noticia-->
                 </div>
             </article>
@@ -103,11 +105,11 @@
 
                 <h2>Games</h2><!--CATEGORIA-->
 
-                <h1><a href="#">Hollow Knight: Silksong</a></h1><!--Titulo da noticia-->
+                <h1><a href="Sites/Silksong.html">Hollow Knight: Silksong</a></h1><!--Titulo da noticia-->
 
                 <div class=""><!--adiciona class-->
 
-                    <img src="img/Hollow Knight SilkSong.jpg" alt="SilkSong" title="Hollow Knight" ><!--Adiciona foto da noticia,alt,title=fotografo-->
+                    <img src="img/Hollow Knight SilkSong.jpg" alt="SilkSong" title="Hollow Knight" id="foto"><!--Adiciona foto da noticia,alt,title=fotografo-->
                     <p>Um dos proximos lançamentos da empresa Team Cherry: Hollow Knight: Silksong</p><!--Descricao da noticia-->
                 </div>
             </article>
@@ -116,40 +118,43 @@
 
                 <h2>Atualização</h2><!--CATEGORIA-->
 
-                <h1><a href="#">Minecraft Dungeons</a></h1><!--Titulo da noticia-->
+                <h1><a href="Sites/MineDugeon.html">Minecraft Dungeons</a></h1><!--Titulo da noticia-->
 
                 <div class=""><!--adiciona class-->
 
-                    <img src="img/Minecraft Hidden Dephts.jpg" alt="Hidden Dephts" title="Minecraft" ><!--Adiciona foto da noticia,title=fotografo,alt-->
+                    <img src="img/Minecraft Hidden Dephts.jpg" alt="Hidden Dephts" title="Minecraft" id="foto" ><!--Adiciona foto da noticia,title=fotografo,alt-->
                     <p>Um novo capítulo para a aventura de seu herói, é chagada a Hidden Dephts</p>
                 </div>
             </article> <!--FAZER RESENHA DE CADA COM VISÃO SUPERIOR + OPINIÃO-->
 
         </main>
+    
         <aside> <!--Jogos Com Desconto/Gratuitos + CLIQUE BAIT USAR FONTE ABRIL FATFACE-->
 
             <article>
-
-                <img src="" alt="" title=""><!--Adicionar imagem,titulo,quem tirou foto-->
-
-                <h1><a href="#"></a></h1><!--Propaganda-->
+                <a href="https://www.epicgames.com/store/pt-BR/p/among-us">
+                    <img src="img/amoug.jpeg" alt="Among-us" title="One Among Us" id="foto">
+                    <h1>Among Us</h1>
+                </a>
+                <p>Among us, Game de grande sucesso esta disponivel de forma gratuita na Epic Games Store (27/05 - 03/06)</p>
 
             </article>
 
             <article>
-
-                <img src="" alt="" title=""><!--Adicionar imagem,titulo,quem tirou foto-->
-
-                <h1><a href="#"></a></h1><!--Propaganda-->
+                <a href="https://store.steampowered.com/app/424840/Little_Nightmares/">
+                    <img src="img/Little.jpeg" title="Nightmares" id="foto">
+                    <h1>Little Nightmares</h1>
+                </a>
+                <p>Little Nightmares, Game Gratis por tempo limitado na plataforma STEAM (28/05 - 30/05)</p>
                 
             </article>
 
         </aside>
     </div>
     
-    <footer> <!--USAR FONTE RAJDHANI-->
+    <footer id="texto">
         
-        <img src="" alt="Corujão"><!--Icon do corujao-->
+        <img src="img/Corujão.svg" alt="Corujão" id="fotoC1">
         
         <ul>
             <li><a href="#">Contrato</a></li>
@@ -158,10 +163,9 @@
         </ul>
     
     <address>
-        -  <br><!--Endereço-->
-        -  <br>
-        <a href="">(16)9'4567-8910</a><br><!--Telefone-->
-        <a href=""></a><!---Email-->
+        Rua Zé da Vila Tião 3100  <br>
+        Morro Da Pinda Moiangaba  <br>
+        <a href="">(16)94567-8910</a><br>
     </address>
 
     </footer>
