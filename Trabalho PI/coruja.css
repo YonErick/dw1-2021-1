@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee&family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /*font-family: 'Abril Fatface', cursive;
   font-family: 'Bungee', cursive;
   font-family: 'Rajdhani', sans-serif;*/
   :root {
-    --cor-primaria: #474A51;
-    --cor-fundo-clara: #C0C0C0;
+    --cor-primaria: #282A36;
+    --cor-fundo-clara: #999999;
     --cor-texto-claro: #FFFFFF;
-    --cor-texto-escuro: black;
+    --cor-texto-escuro: rgb(15, 15, 15);
+    --cor-menu: #535353;
 }
   * {
     padding: 0;
@@ -18,24 +21,24 @@ html{
     font-size: 16px;
 }
 body{
-    background-color: black;
+    background-color:  rgb(32, 32, 32);
 }
 
 #Principal {
-    background-color: #C0C0C0; 
+    background-color: var(--cor-fundo-clara); 
     padding: 20px;
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
 }
 
 header {
     background-color: var(--cor-primaria);
-    
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
+
 a {
     color: var(--cor-texto-escuro);
     text-decoration: none;
@@ -87,14 +90,12 @@ nav ul{
     font-family: Bungee, Calibri, Arial;
 }
 .menu li{
-    margin: 5px
+    margin: 5px;
 }
 .menu ul {
     list-style-type: none;
     padding: 0;
-}
-.menu ul {
-    background-color: #808080;
+    background-color: #110000;
 }
 .menu ul li {
     display: inline;
@@ -109,8 +110,11 @@ nav ul{
     height: 100%;
 }
 .menu ul li a:hover {
-    background-color: #696969;
+    background-color: var(--cor-menu);
     padding: 9px 50px;
+}
+.menu ul li ul li a:hover{
+    padding: 9px;
 }
 .menu ul li ul li{
     margin: 0;
@@ -123,8 +127,11 @@ nav ul{
 .menu ul li:hover ul {
     display: block;
 }
+.menu ul li a:hover ul {
+    display: inline-block;
+}
 .menu ul ul {
-    width: auto;
+    width: 100%;
 }
 .menu ul ul li a {
     display: block;
@@ -132,23 +139,23 @@ nav ul{
 
 ul{
     margin-block-end: 1em;
-    padding-inline-start: 40px;
 }
 
-/*FOTOS */
-
-#foto{
-    width: 300px;                              
+img {
+    border-radius: 10px;
 }
-
 /*FOOTERS*/
 
 footer {
+    color: rgb(0, 174, 255);
     background-color: var(--cor-primaria);
-    padding: 10px 20px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+}
+
+footer a{
+    color: rgb(0, 174, 255)
 }
 footer img{
     width:10%;                              
@@ -162,8 +169,10 @@ footer ul li:last-child {
     border-right: none;
 }
 
+/*MAiN*/
+
 main, aside {
-    background-color: #696969;
+    background-color: var(--cor-menu);
     padding: 24px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -176,26 +185,105 @@ main {
     width: 75%;
 }
 
+main > article > h2{ 
+    text-transform: uppercase;
+    color: rgb(0, 174, 255);
+}
+
+/*ASIDE*/
+
 aside {
     margin-left: 20px;
-    background-color: #696969;
+    background-color: var(--cor-primaria);
     width: 25%;
 }
+
+aside p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 aside > article > a > img {
     display: block;
-    margin: 1 auto;
-    border-radius: 4px;
+    margin: auto;
+    border-radius: 30px;
     max-width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
+
 aside > article > h1 > a {
     font-size: 1rem;
     color: #000000;
 }
+aside > article > P {
+    font-size: 1rem;
+    color: #D3D3D3;
+}
+
 aside > article > h1 {
     margin-top: 6px;
 }
 
+aside h1{
+    font-family: Bungee, Arial, Calibri;
+}
+
+/*NOTICIAS*/
+
 #texto{
     font-family: Bungee, Calibri, Arial;
+}
+
+.GTA h1 a{
+    font-family: 'Suez one', arial ;
+    font-size: 28px;
+}
+
+.GTA{
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.GTA img{
+    width: 50%;
+    border-radius: 10px;
+}
+
+.RedDead{
+    padding-top: 40px;
+}
+
+.RedDead img{
+    width: 40%;
+}
+
+.RedDead h1 a{
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
+}
+
+.Hollow{
+        padding-top: 40px;
+}
+
+.Hollow img{
+    width: 40%;
+}
+
+.Hollow h1 a{
+        font-family: 'Suez one', Arial ;
+        font-size: 28px;
+}
+
+.Minecraft-DG{
+        padding-top: 40px;
+}
+
+.Minecraft-DG img{
+    width: 40%;
+}
+
+.Minecraft-DG h1 a{
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
 }
