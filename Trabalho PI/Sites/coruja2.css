@@ -86,6 +86,7 @@ nav ul{
 }
 
 /*MENU*/
+
 .menu{
     font-family: Bungee, Calibri, Arial;
 }
@@ -233,76 +234,100 @@ aside h1{
     font-family: Bungee, Calibri, Arial;
 }
 
-.GTA  h1  a{
-    font-family: 'Suez one', arial ;
-    font-size: 28px;
+/*GTA V*/
 
+.GTA{
+    padding-top: 40px;
+}
+
+.GTA img{
+    width: 70%;
+    display: flex;
+    margin: auto;
+}
+
+.GTA  h1{
+    font-family: 'Suez one', Arial ;
+    font-size: 3rem;
 }
 
 .GTA p{
     margin-top: 20px;
-    display: flexbox;
-    text-align: center;   
+    text-align: center;  
+    color: #D3D3D3; 
 }
 
-.GTA{
-    background-color: var(--cor-primaria);
-    border-radius: 10px;
-    padding: 24px;
-    font-size: 1rem;
-    color: #D3D3D3;
-}
-
-.GTA img{
-    width: 65%;
-    display: flex;
-    margin: auto;
-}
+/*Red Dead Redemption 2*/
 
 .RedDead{
     padding-top: 40px;
 }
 
 .RedDead img{
-    width: 40%;
+    width: 70%;
+    display: flex;
+    margin: auto;
 }
 
-.RedDead h1 a{
+.RedDead h1 {
     font-family: 'Suez one', Arial ;
-    font-size: 28px;
+    font-size: 3rem;
 }
 .RedDead p{
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;  
+    color: #D3D3D3; 
 }
- 
+
+/*Hollow Knight: SilkSong*/
+
 .Hollow{
-        padding-top: 40px;
+    padding-top: 40px;
 }
 
 .Hollow img{
-    width: 40%;
+    width: 70%;
+    display: flex;
+    margin: auto;
 }
 
-.Hollow h1 a{
-        font-family: 'Suez one', Arial ;
-        font-size: 28px;
+.Hollow h1 {
+    font-family: 'Suez one', Arial ;
+    font-size: 3rem;
 }
 .Hollow p {
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;  
+    color: #D3D3D3; 
 }
 
+/*MINECRAFT DUNGEONS*/
+    
 .Minecraft-DG{
         padding-top: 40px;
 }
 
 .Minecraft-DG img{
-    width: 40%;
+    width: 70%;
+    display: flex;
+    margin: auto;
 }
 
-.Minecraft-DG a h1{
+.Minecraft-DG h1{
     font-family: 'Suez one', Arial ;
-    font-size: 28px;
+    font-size: 3rem;
 }
+
 .Minecraft-DG p {
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;  
+    color: #D3D3D3; 
+}
+
+.Minecraft-DG a{
+    color: #0088FF;
+}
+
+.Minecraft-DG a:hover{
+    color: aqua;
 }
