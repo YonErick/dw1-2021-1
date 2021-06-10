@@ -48,6 +48,11 @@ a:hover {
     text-decoration: underline;
 }
 
+ p a:hover  {
+    text-decoration: underline;
+    color: #9966CC;
+}
+
 /*NAV'S*/
 
 nav ul li {
@@ -233,17 +238,7 @@ aside h1{
     font-family: Bungee, Calibri, Arial;
 }
 
-.GTA  h1  a{
-    font-family: 'Suez one', arial ;
-    font-size: 28px;
-
-}
-
-.GTA p{
-    margin-top: 20px;
-    display: flexbox;
-    text-align: center;   
-}
+/*GTA V*/
 
 .GTA{
     background-color: var(--cor-primaria);
@@ -259,6 +254,19 @@ aside h1{
     margin: auto;
 }
 
+.GTA  h1  a{
+    font-family: 'Suez one', arial ;
+    font-size: 28px;
+
+}
+
+.GTA p {
+    margin-top: 20px;
+    font-size: 1.3rem;  
+}
+
+/*Red Dead Redemption 2*/
+
 .RedDead{
     padding-top: 40px;
 }
@@ -271,9 +279,12 @@ aside h1{
     font-family: 'Suez one', Arial ;
     font-size: 28px;
 }
-.RedDead p{
+.RedDead p b{
     margin-top: 10px;
+    font-size: 1.3rem;
 }
+
+/*Hollow Knight: SilkSong*/
  
 .Hollow{
         padding-top: 40px;
@@ -287,9 +298,12 @@ aside h1{
         font-family: 'Suez one', Arial ;
         font-size: 28px;
 }
-.Hollow p {
+.Hollow p b{
     margin-top: 10px;
+    font-size: 1.3rem;
 }
+
+/*MINECRAFT DUNGEONS*/
 
 .Minecraft-DG{
         padding-top: 40px;
@@ -303,6 +317,7 @@ aside h1{
     font-family: 'Suez one', Arial ;
     font-size: 28px;
 }
-.Minecraft-DG p {
+.Minecraft-DG p b{
     margin-top: 10px;
+    font-size: 1.3rem;
 }
