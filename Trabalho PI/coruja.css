@@ -79,6 +79,51 @@ nav ul{
     align-items: center;
 }
 
+#menu {
+    padding: 0 20px;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu-contraido {
+    position: relative;
+}
+
+#menu-contraido input, #menu-contraido span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Só vão aparecer de 800px para baixo */
+    display: none;
+}
+
+#menu-contraido input {
+    z-index: 100; /* Traz o input para cima */ 
+    opacity: 0; /* Esconde o input */ 
+    display: none; 
+}
+
+#menu-contraido span {
+    display: block;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    border: 2px solid #FFFFFF;
+    background-image: url('img/menu-icon-48x48.png');
+    background-size: 40px 40px;
+    background-position: center center;
+    cursor: pointer; /* Cursor de mãozinha */
+    display: none; 
+}
+
+/* Seletor ~: seleciona o próximo elemento (irmão) */
+#menu-contraido input:checked ~ span {
+    /* Troca a imagem */
+    background-image: url('img/close-icon-48x48.png');
+}
 /*REDES SOCIAIS*/
 
 #Rede-Social a {
@@ -332,10 +377,10 @@ aside h1{
 
 @media screen and (max-width: 1020px) {
     main {
-        width: 70%;
+        width: 60%;
     }
     aside {
-        width: 30%;
+        width: 40%;
     }
     .foto {
         flex-direction: column; 
@@ -349,21 +394,20 @@ aside h1{
 @media screen and (max-width: 800px) {
     #menu {
         min-height: 88px;
-        padding: 0;
     }
     #menu ul {
         margin-top: 50px;
     }
     #menu ul li {  
         display: block;
-        margin: 6px 0;
+        margin: 0;
     }
     #menu a {
         width: 100%;
         display: block;
     }
     #menu-contraido {
-        margin-top: 24px;
+        margin-top: 45px;
         width: 100%;
     }
     #menu-contraido ul {
@@ -373,6 +417,7 @@ aside h1{
     #menu-contraido input, #menu-contraido span {
         display: block;
         left: 20px;
+        top: -42px;
     }
     #menu-contraido input:checked ~ ul {
         display: block;
@@ -415,10 +460,11 @@ aside h1{
         flex-direction: column;
         align-items: center;
     }
-    header img{
-        max-width: 100% ;
-    }
     .destaque > h1 > a{
         font-size: 2rem;
     }
+    header img{
+        max-width: 100% ;
+    }
+
 }
