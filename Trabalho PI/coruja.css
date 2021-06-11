@@ -48,9 +48,17 @@ a:hover {
     text-decoration: underline;
 }
 
- p a:hover  {
-    text-decoration: underline;
+p a:visited {
     color: #9966CC;
+}
+
+p a{
+    color: rgb(79, 79, 255);
+}
+
+p a:hover  {
+    filter: brightness(170%);
+    text-decoration: underline;
 }
 
 /*NAV'S*/
@@ -295,8 +303,8 @@ aside h1{
 }
 
 .Hollow h1 a{
-        font-family: 'Suez one', Arial ;
-        font-size: 28px;
+    font-family: 'Suez one', Arial ;
+    font-size: 28px;
 }
 .Hollow p b{
     margin-top: 10px;
@@ -320,4 +328,97 @@ aside h1{
 .Minecraft-DG p b{
     margin-top: 10px;
     font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1020px) {
+    main {
+        width: 70%;
+    }
+    aside {
+        width: 30%;
+    }
+    .foto {
+        flex-direction: column; 
+    }
+    .Principal img {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #menu {
+        min-height: 88px;
+        padding: 0;
+    }
+    #menu ul {
+        margin-top: 50px;
+    }
+    #menu ul li {  
+        display: block;
+        margin: 6px 0;
+    }
+    #menu a {
+        width: 100%;
+        display: block;
+    }
+    #menu-contraido {
+        margin-top: 24px;
+        width: 100%;
+    }
+    #menu-contraido ul {
+        display: none;
+    }
+   
+    #menu-contraido input, #menu-contraido span {
+        display: block;
+        left: 20px;
+    }
+    #menu-contraido input:checked ~ ul {
+        display: block;
+    }
+
+    #content {
+        flex-direction: column; 
+    }
+    main {
+        width: 100%;
+    }
+    aside {
+        margin-left: 0;
+        width: 100%;
+    }
+    aside > article > h1 {
+        text-align: center;
+    }
+    .destaque img {
+        /* Centralizar a imagem */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer > * {    /* Todos os filhos DIRETOS de footer */
+        margin-bottom: 12px;
+    }
+    footer ul li:first-child {  /* Só o primeiro (first-child) li */
+        padding-left: 0;
+    }
+    footer address {
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        max-width: 100% ;
+    }
+    .destaque > h1 > a{
+        font-size: 2rem;
+    }
 }
